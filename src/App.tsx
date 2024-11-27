@@ -1,9 +1,8 @@
-function App() {
+import HangmanGame from "./HangmanGame.tsx";
 
+function App() {
 	return (
-		<h1>
-			HI
-		</h1>
+		<HangmanGame />
 	)
 }
 

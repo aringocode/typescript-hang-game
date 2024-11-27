@@ -1,0 +1,32 @@
+.hangman-picture-wrapper {
+    position: relative;
+}
+
+.hangman-baseplate {
+    height: 10px;
+    width: 250px;
+    background: black;
+}
+
+.hangman-vertical {
+    height: 400px;
+    width: 10px;
+    background: black;
+    margin-left: 120px;
+}
+
+.hangman-gallows {
+    height: 10px;
+    width: 200px;
+    background: black;
+    margin-left: 120px;
+}
+
+.hangman-gallows-vertical {
+    height: 50px;
+    width: 10px;
+    background: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
