@@ -18,7 +18,10 @@ const HangmanGame = () => {
 			<div className="hangman-game-result">Lose Win</div>
 			<HangmanPicture />
 			<HangmanWord />
-			<HangmanKeyboard />
+			<div className='hangman-keyboard-wrapper'>
+				<HangmanKeyboard />
+			</div>
+
 		</div>
 	)
 }

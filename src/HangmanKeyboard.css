@@ -1,0 +1,31 @@
+.hangman-keyboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: .5rem
+}
+.hangman-keyboard-btn {
+    width: 100%;
+    border: 3px solid black;
+    background: none;
+    aspect-ratio: 1 / 1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.hangman-keyboard-btn.active {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+}
+
+.hangman-keyboard-btn.inactive {
+    opacity: .3;
+}
+
+.hangman-keyboard-btn:hover:not(:disabled),
+.hangman-keyboard-btn:focus:not(:disabled) {
+    background-color: hsl(200, 100%, 75%);
+}
