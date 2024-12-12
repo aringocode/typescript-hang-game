@@ -24,16 +24,17 @@ const LEFT_LEG = (
 	<div className='hangman-left-leg' />
 );
 
-const HangmanPicture = () => {
+const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG];
+
+type HangmanPictureProps = {
+	numberOfGuess: number
+}
+
+const HangmanPicture = ({ numberOfGuess }: HangmanPictureProps) => {
 
 	return (
 		<div className='hangman-picture-wrapper'>
-			{HEAD}
-			{BODY}
-			{RIGHT_ARM}
-			{LEFT_ARM}
-			{RIGHT_LEG}
-			{LEFT_LEG}
+			{BODY_PARTS.slice(0, numberOfGuess)}
 			<div className='hangman-gallows-vertical' />
 			<div className='hangman-gallows' />
 			<div className='hangman-vertical' />

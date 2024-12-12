@@ -1,4 +1,4 @@
-import HangmanGame from "./HangmanGame.tsx";
+import HangmanGame from './HangmanGame.tsx';
 
 function App() {
 	return (
